@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CuantoVa.Views.NuevaLista" BackgroundImage="https://img.freepik.com/vector-gratis/fondo-pintura-acuarela-rosa-vibrante_53876-58930.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Cuanto Va" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="48"/>
+        </Frame>
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Shopping_cart_with_food_clip_art_2.svg/1200px-Shopping_cart_with_food_clip_art_2.svg.png"
+         Aspect="Fill"
+       HeightRequest="{OnPlatform iOS=300, Android=250}"
+       WidthRequest="{OnPlatform iOS=300, Android=250}"
+       HorizontalOptions="Center">
+            </Image>
+
+        <Button x:Name="btnGo" Text="Vamos" Clicked="btnGo_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

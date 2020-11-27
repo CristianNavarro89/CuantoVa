@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CuantoVa.Views.Registrar">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="30">
+            <Label Text="Nombre"></Label>
+            <Entry Placeholder="Ingrese tu Nombre"
+                   x:Name="nombre"></Entry>
+            <Label Text="Usuario"></Label>
+            <Entry Placeholder="Ingrese tu Usuario"
+                   x:Name="usuario"></Entry>
+            <Label Text="Contraseña"></Label>
+            <Entry Placeholder="Ingrese tu Constraseña"
+                   x:Name="contra"></Entry>
+
+            <Button Text="Registrarte"
+                    Clicked="Button_Clicked" BackgroundColor="Azure"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

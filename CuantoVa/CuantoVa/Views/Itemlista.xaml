@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CuantoVa.Views.Itemlista"
+             BackgroundImage="https://img.freepik.com/vector-gratis/fondo-pintura-acuarela-rosa-vibrante_53876-58930.jpg">
+    <ContentPage.Content>
+        <StackLayout >
+            <Label Text="Mi Lista de Cuanto Va" FontSize="20" HorizontalTextAlignment="Center">
+            </Label>
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+                <Label  Grid.Column="0" Text="Codigo" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="15" />
+                <Label  Grid.Column="1" Text="Item" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="15" />
+                <Label  Grid.Column="2" Text="Cantidad" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="15" />
+                <Label  Grid.Column="3" Text="Precio" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="15" />
+            </Grid>
+
+
+            <ListView x:Name="ListaItem" ItemSelected="ListaItem_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <Grid>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+
+                                </Grid.ColumnDefinitions>
+
+
+                                <Label  Grid.Column="0"  VerticalOptions="CenterAndExpand" Text="{Binding Codbar}"></Label>
+                                <Label  Grid.Column="1"  VerticalOptions="CenterAndExpand" Text="{Binding Descitem}"></Label>
+                                <Label  Grid.Column="2"  VerticalOptions="CenterAndExpand" Text="{Binding Cantidad}"></Label>
+                                <Label  Grid.Column="3"  VerticalOptions="CenterAndExpand" Text="{Binding Precio}"></Label>
+
+                            </Grid>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+                <Label  Grid.Column="0" Text="Total: " HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="15" />
+                <Label  Grid.Column="3" x:Name="lblTotal" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="DarkBlue" FontSize="15" />
+               
+            </Grid>
+
+
+            <Button x:Name="btn_registrar"
+                            Text="Nuevo Item"
+                            Clicked="btn_registrar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

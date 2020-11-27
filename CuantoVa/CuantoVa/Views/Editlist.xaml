@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CuantoVa.Views.Editlist" BackgroundImage="https://img.freepik.com/vector-gratis/fondo-pintura-acuarela-rosa-vibrante_53876-58930.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="10" Spacing="10">
+            
+            <Label BackgroundColor="WhiteSmoke" Text="Editar" FontSize="25" TextColor="Black" 
+                   HorizontalTextAlignment="Center"/>
+            
+            <Entry Placeholder="Ingrese la descripcion "
+                   x:Name="txtDesc"></Entry>
+            <Entry Placeholder="Ingrese la cantidad"
+                   x:Name="txtCant"></Entry>
+            <Entry Placeholder="Ingrese el precio"
+                   x:Name="txtPrec"></Entry>
+
+            <Button Text="Actualizar"
+                    Clicked="Button_Clicked" BackgroundColor="LawnGreen"></Button>
+            <Button Text="Eliminar"
+                   BackgroundColor="Red"  Clicked="Button_Clicked_1"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

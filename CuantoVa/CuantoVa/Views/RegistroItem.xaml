@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CuantoVa.Views.RegistroItem" BackgroundImage="https://img.freepik.com/vector-gratis/fondo-pintura-acuarela-rosa-vibrante_53876-58930.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="30">
+            <Label Text="Codigo"></Label>
+            <Entry Placeholder="Ingrese el codigo"
+                   x:Name="codBarras"></Entry>
+            <Label Text="Descripcion"></Label>
+            <Entry Placeholder="Ingrese la descripcion"
+                   x:Name="descItem"></Entry>
+            <Label Text="Cantidad"></Label>
+            <Entry Placeholder="Ingrese la cantidad"
+                   x:Name="cantItem"></Entry>
+            <Label Text="Precio"></Label>
+            <Entry Placeholder="Ingrese el precio"
+                   x:Name="precItem"></Entry>
+
+            <Button Text="Guardar"
+                    Clicked="Button_Clicked" BackgroundColor="Azure"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

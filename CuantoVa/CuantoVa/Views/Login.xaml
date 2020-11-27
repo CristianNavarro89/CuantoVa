@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CuantoVa.Views.Login" BackgroundImage="https://img.freepik.com/vector-gratis/fondo-pintura-acuarela-rosa-vibrante_53876-58930.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="30">
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Cuanto Va" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="48"/>
+            </Frame>
+                     
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="1" Source="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png" HorizontalOptions="Start" WidthRequest="40" HeightRequest="40"/>
+                <Entry Grid.Row="1" Placeholder="Ingrese tu usuario" Keyboard="Email"  x:Name="usuario"  HorizontalOptions="Center"/>
+                <Image Grid.Row="2" Source="https://cdn2.iconfinder.com/data/icons/keys-line-style/120/key-15-256.png" HorizontalOptions="Start" WidthRequest="40" HeightRequest="40"/>
+                <Entry Grid.Row="2" Placeholder="Ingrese tu Contraseña" IsPassword="True" x:Name="contra" HorizontalOptions="Center"/>
+            </Grid>
+
+            <Button Text="Ingresar" BackgroundColor="DarkCyan" TextColor="White"  Clicked="Button_Clicked" x:Name="btn_login"></Button>
+            <Button  Text="Registrarte" Clicked="Button_Clicked_1" x:Name="btn_registrar"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
